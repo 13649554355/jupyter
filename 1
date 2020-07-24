@@ -1,0 +1,133 @@
+```python
+print('Hello, world!')
+```
+
+    Hello, world!
+    
+
+
+```python
+%pwd
+```
+
+
+
+
+    'C:\\Users\\Administrator\\11_env'
+
+
+
+
+```python
+open(path).readline()
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-3-7fad5faebc9b> in <module>
+    ----> 1 open(path).readline()
+    
+
+    NameError: name 'path' is not defined
+
+
+
+```python
+path='ch02/usagov_bitly_data2012-03-16-1331923249.txt'
+```
+
+
+```python
+import json
+path='ch02/usagov_bitly_data2012-03-16-1331923249.txt'
+records=[json.loads(line) for line in open(path)]
+```
+
+
+    ---------------------------------------------------------------------------
+
+    FileNotFoundError                         Traceback (most recent call last)
+
+    <ipython-input-5-1562955060f0> in <module>
+          1 import json
+          2 path='ch02/usagov_bitly_data2012-03-16-1331923249.txt'
+    ----> 3 records=[json.loads(line) for line in open(path)]
+    
+
+    FileNotFoundError: [Errno 2] No such file or directory: 'ch02/usagov_bitly_data2012-03-16-1331923249.txt'
+
+
+
+```python
+records[0]
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-6-770d95b9ee81> in <module>
+    ----> 1 records[0]
+    
+
+    NameError: name 'records' is not defined
+
+
+
+```python
+records[0]['tz']
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-7-8690f6d58ff2> in <module>
+    ----> 1 records[0]['tz']
+    
+
+    NameError: name 'records' is not defined
+
+
+
+```python
+print(records[0]['tz'])
+```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    <ipython-input-8-cb0a6ece3d65> in <module>
+    ----> 1 print(records[0]['tz'])
+    
+
+    NameError: name 'records' is not defined
+
+
+
+```python
+an_apple=27
+```
+
+
+```python
+an_example=42
+```
+
+an<Tab>
+
+
+
+
+
+
+```python
+
+```
